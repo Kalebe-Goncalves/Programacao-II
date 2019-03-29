@@ -1,0 +1,15 @@
+<html lang="pt-br" >
+    <head>
+        <meta charset="utf-8">
+        <title>Listar pessoa</title>  
+    </head>
+    <body>
+        <h1>NOMES</h1>
+        {% for p in geral: %} 
+            <p>Nome: {{p.nome}}</p> <p>  Endereço: {{p.endereco}}</p> <p>   Telefone: {{p.telefone}}</p>
+            <a href="/excluir_pessoa"?nome = {{p.nome}}>Excluir</a> 
+       		<hr>
+       		<br>
+        {%endfor%}
+    </body>
+</html>
