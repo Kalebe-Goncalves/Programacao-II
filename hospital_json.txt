@@ -1,0 +1,111 @@
+{
+    "Hospital":{
+        "Especialidade":{
+            'id': 1, 
+            'cod_especialidade': 1, 
+            'documento': 'Conselho de Médicos Gerais (CMG)',
+             'desc_especialidade': 'Especialista em problemas Respirátorios'
+        },
+        "Medico":{
+            'id': 1,
+            'nome': 'Dr. Grey', 
+            'id_medico': 1, 
+            'salario': 4050.5, 
+            'especialidade':{
+                'id': 1, 
+                'cod_especialidade': 1, 
+                'documento': 'Conselho de Médicos Gerais (CMG)', 
+                'desc_especialidade': 'Especialista em problemas Respirátorios'
+            }
+        },
+        "Exame":{
+            'id': 1, 
+            'preco': 50.0, 
+            'prazo_liberacao': 2, 
+            'nome': 'triglicerideos'
+        },
+        "Requisicao":{
+            'id': 1, 
+            'data': '10/08/2019', 
+            'paciente': {
+                'id': 1, 
+                'nome': 'José da Silva Campos Sales Neto Filho', 
+                'cpf': '111.111.111-11', 
+                'doenca': 'Aids e Hpv'
+            }, 
+            'medico': {
+                'id': 1, 
+                'nome': 'Dr. Grey', 
+                'id_medico': 1, 
+                'salario': 4050.5, 
+                'especialidade': {
+                    'id': 1, 
+                    'cod_especialidade': 1, 
+                    'documento': 'Conselho de Médicos Gerais (CMG)', 
+                    'desc_especialidade': 'Especialista em problemas Respirátorios'
+                    }
+            }
+        },
+        "Paciente":{
+            'id': 1, 
+            'nome': 'José da Silva Campos Sales Neto Filho', 
+            'cpf': '111.111.111-11', 
+            'doenca': 'Aids e Hpv'
+        },
+        "Enfermeira":{
+            'id': 1, 
+            'nome': 'Helga Pereira Mattos Vargas Pinheiro', 
+            'cod_identificador': 1, 
+            'turno_atuacao': 'Geral'
+        },
+        "Setor"{
+            'id': 1, 
+            'nome': 'Setor Cirúrgico A1', 
+            'localizacao': 'Prédio A', 
+            'cor': 'Vermelho', 
+            'tipo_setor': 'Cirúrgico'
+        },
+        "Cirurgia":{
+            'id': 1, 
+            'nome_cirurgia': 'Angioplastia Múltipla Invertida pelo método de grayson', 
+            'data': '24/01/2020', 
+            'medico_atuante': {
+                'id': 1, 
+                'nome': 'Dr. Grey', 
+                'id_medico': 1, 
+                'salario': 4050.5, 
+                'especialidade': {
+                    'id': 1, 
+                    'cod_especialidade': 1, 
+                    'documento': 'Conselho de Médicos Gerais (CMG)', 
+                    'desc_especialidade': 'Especialista em problemas Respirátorios'
+                },
+            }, 
+            'enfermeira': {
+                'id': 1, 
+                'nome': 'Helga Pereira Mattos Vargas Pinheiro', 
+                'cod_identificador': 1, 
+                'turno_atuacao': 'Geral'
+            }, 
+            'paciente': {
+                'id': 1, 
+                'nome': 'José da Silva Campos Sales Neto Filho', 
+                'cpf': '111.111.111-11', 
+                'doenca': 'Aids e Hpv'
+            }, 
+            'setor': {
+                'id': 1, 
+                'nome': 'Setor Cirúrgico A1', 
+                'localizacao': 'Prédio A', 
+                'cor': 'Vermelho', 
+                'tipo_setor': 'Cirúrgico'
+            }, 
+            'duracao': '36 horas'
+        },
+        "Hospital":{
+            'id': 1, 
+            'nome': 'Grey-Sloan', 
+            'localizacao': 'Avenida Paulista Numero 523'
+        }  
+    }
+}
