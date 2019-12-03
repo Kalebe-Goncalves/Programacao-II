@@ -1,0 +1,140 @@
+body{
+	height: 100%;
+	overflow: scroll;
+	margin-left: 13%;
+	margin-right: 13%;
+	font-family: 'Lexend Deca', Sans-Serif;
+}
+h1{
+	text-align: center;
+	font-size: 36px;
+}
+.titulo{
+	margin-top: 40px;
+	margin-bottom: -50px;
+	line-height: 20px;
+}
+#esquerda{
+	margin-right: 62%;
+	height: 2px;
+	background-color: black;
+}
+#direita{
+	margin-left: 62%;
+	margin-top: -10px;
+	height: 2px;
+	background-color: black;
+}
+
+nav {
+	background-color: black;
+	margin: 0 auto;
+}
+nav ul {
+	padding: 0;
+  	margin: 0;
+	list-style: none;
+	position: relative;
+	text-align: center;
+}
+nav ul li {
+	display: inline-block;
+	color: white;
+}
+a:link{
+	display: block;
+	padding: 0 82.5px;	
+	font-size: 18px;
+	line-height: 40px;
+	text-decoration: none;
+	color: white;
+}
+
+a:visited{
+	background-color: #DB7093;
+	color: white;
+	text-decoration: none;
+}
+a:hover { 
+	background-color: #DB7093;
+	color: white;
+	text-decoration: none;
+}
+
+a:active{
+	background-color: #DB7093;
+	color: white;
+	text-decoration: none;
+}
+
+#img_principal{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+#circulo{
+	width: 250px;
+	height: 250px;
+	border-radius: 125px;
+	background-color: black;
+	margin-top: -30%;
+	margin-left: 3%;
+	position: absolute;
+}
+h2{
+	color: white;
+	margin-left: 46px;
+	margin-top: 35px;
+	text-transform: uppercase;
+}
+#embaixo{
+	margin-top: -20px;
+	margin-left: 80px;
+}
+
+p{
+	color: white;
+	margin-top: 60px;
+	font-size: 16px;
+	margin-left: 30px;
+}
+#embaixo2{
+	margin-top: -10px;
+	margin-left: 92px;
+}
+.divisao{
+	margin-left: 44%;
+	font-size: 18px;
+	margin-top: -35px;
+}
+#assunto{
+	margin-top: 30px;
+}
+.catalogo{
+	width: 100%;
+}
+.catalogo img{
+	width: 238px;
+	height: 430px; 
+	padding-right: 10px;
+}
+.catalogo img:hover{
+	opacity: 0.7; 
+}
+
+#ultima_img{
+	padding-right: 0px;
+}
+footer{
+	margin-top: 20px;
+	background-color: black;
+	color: white;
+	font-size: 12px;
+	padding: 5px 10px 5px 10px;
+	margin-bottom: 20px;
+}
+.redes_sociais{
+	float: right;
+	margin-top: -25px;
+}

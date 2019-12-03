@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Roupas e Cia</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href={{ url_for('static', filename='css/style_principal.css') }}>
+	<link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="titulo">
+<hr id="esquerda"><hr id="direita">
+</div>
+<h1>Roupas e Cia</h1>
+<nav>
+	<ul>
+		<li><a href=/>Página Inicial</a></li>
+		<li><a href=/loja target="_blank">Loja</a></li>
+		<li><a href="#">Quem Somos</a></li>
+		<li><a href="#">Login</a></li>
+	</ul>
+</nav>
+
+<img id="img_principal" src="{{url_for('static', filename = 'imagens/imagem_principal.jpg')}}" alt="colecao">
+<div id="circulo">
+	<h2>Coleção de </h2>
+	<h2 id="embaixo">Verão</h2>
+	<p>Já nas Lojas Para entrar</p>
+	<p id="embaixo2">na moda</p>
+</div>
+
+<div id="assunto">
+<hr id="esquerda"><hr id="direita">
+</div>
+<div class="divisao">
+	<h3>Verão 2020</h3>
+</div>
+
+<div class="catalogo">
+	<img src="{{url_for('static', filename = 'imagens/catalogo_1.jpg')}}" alt="catalogo 1">
+	<img src="{{url_for('static', filename = 'imagens/catalogo_2.jpg')}}" alt="catalogo 2">
+	<img src="{{url_for('static', filename = 'imagens/catalogo_3.jpg')}}" alt="catalogo 3">
+	<img id="ultima_img" src="{{url_for('static', filename = 'imagens/catalogo_4.jpg')}}" alt="catalogo 4">
+</div>
+
+<footer>
+	<address>© 2019 por ROUPAS E CIA.<br>
+	ROUPAS E CIA, R. Bernardino José de Oliveira, 81 - Badenfurt, Blumenau - SC, CEP: 89070-270</address>
+	<div class="redes_sociais">
+		<i style="font-size:24px" class="fa">&#xf232;</i>   <i style="font-size:24px" class="fa">&#xf099;</i>   <i style="font-size:24px" class="fa">&#xf230;</i>
+	</div>	
+</footer>
+</body>
+</html>

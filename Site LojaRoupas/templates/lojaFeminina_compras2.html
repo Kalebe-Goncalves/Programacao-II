@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Roupas e Cia</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style_loja.css') }}">
+	<link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="titulo">
+<hr id="esquerda"><hr id="direita">
+</div>
+<h1>Roupas e Cia</h1>
+<nav>
+	<ul>
+		<li><a href=/>Página Inicial</a></li>
+		<li><a href=/loja>Loja</a></li>
+		<li><a href="#">Quem Somos</a></li>
+		<li><a href="#">Login</a></li>
+	</ul>
+</nav>
+
+<div id="assunto">
+<hr id="esquerda"><hr id="direita">
+</div>
+<div class="divisao">
+	<h3>Verão 2020</h3>
+</div>
+<div id="busca">
+	<ul>
+		<li><button onclick="MyFunction()">Categoria</button></li>
+		<li><button onclick="MyFunction2()">Tamanho</button></li>
+		<li><button onclick="MyFunction3()">Cor</button></li>
+	</ul>
+	<div id ="myDIV" style="margin-left: -10%; display: none;">
+		<ul>
+			<form>
+				<li><button name="vestido">Vestido</button></li>
+				<li><button name="calca">Calça</button></li>
+				<li><button name="blusa">Blusa</button></li>
+				<li><button name="saia">Saia</button></li>
+			</form>
+		</ul>
+	</div>
+	<div id ="myDIV2" style="display: none;">
+		<ul>
+			<li><button>Pequeno</button></li>
+			<li><button>Médio</button></li>
+			<li><button>Grande</button></li>
+		</ul>
+	</div>
+	<div id ="myDIV3" style="margin-left: -10%; display: none;">
+		<ul>
+			<li><button>Azul</button></li>
+			<li><button>Rosa</button></li>
+			<li><button>Vermelho</button></li>
+			<li><button>Preto</button></li>
+		</ul>
+	</div>
+</div>
+<!-- Alterar catalogo -->
+<div class="catalogo">
+	<img id="01_a" src="{{url_for('static', filename = 'imagens/estoque_roupas/01_a.jpg')}}" alt="catalogo 1">
+	<img id="02_a" src="{{url_for('static', filename = 'imagens/estoque_roupas/02_a.jpg')}}" alt="catalogo 2">
+	<img id="03_a" src="{{url_for('static', filename = 'imagens/estoque_roupas/03_a.jpg')}}" alt="catalogo 3">
+</div>
+<div class="info_roupas">
+	<p>Vestido da Cor Azul</p>
+	<h4><b>R$ 100,00</b></h4>
+	<p class="modos_pagamento">4x de R$25,00 s/juros no cartão RC</p>
+</div>
+<div class="info_roupas" style="margin-left: 336px; margin-top: -122px;">
+	<p>Vestido da Cor Azul longo estampado</p>
+	<h4><b>R$ 100,00</b></h4>
+	<p class="modos_pagamento">4x de R$25,00 s/juros no cartão RC</p>
+</div>
+<div class="info_roupas" style="margin-left: 672px; margin-top: -122px;">
+	<p>Vestido Azul Claro em Jeans</p>
+	<h4><b>R$ 100,00</b></h4>
+	<p class="modos_pagamento">4x de R$25,00 s/juros no cartão RC</p>
+</div>
+<div class="catalogo">
+	<img id = "01_r" src="{{url_for('static', filename = 'imagens/estoque_roupas/01_r.jpg')}}">
+	<img id="02_r" src="{{url_for('static', filename = 'imagens/estoque_roupas/02_r.jpg')}}">
+	<img id="03_r" src="{{url_for('static', filename = 'imagens/estoque_roupas/03_r.jpg')}}" alt="catalogo 3">
+</div>
+<div class="info_roupas">
+	<p>Vestido da Cor Rosa Liso</p>
+	<h4><b>R$ 100,00</b></h4>
+	<p class="modos_pagamento">4x de R$25,00 s/juros no cartão RC</p>
+</div>
+<div class="info_roupas" style="margin-left: 336px; margin-top: -122px;">
+	<p>Vestido Rosa Longo em Neon</p>
+	<h4><b>R$ 100,00</b></h4>
+	<p class="modos_pagamento">4x de R$25,00 s/juros no cartão RC</p>
+</div>
+<div class="info_roupas" style="margin-left: 672px; margin-top: -122px;">
+	<p>Vestido em Jersey Listrado</p>
+	<h4><b>R$ 100,00</b></h4>
+	<p class="modos_pagamento">4x de R$25,00 s/juros no cartão RC</p>
+</div>
+<div class="catalogo">
+	<img id="01_v" src="{{url_for('static', filename = 'imagens/estoque_roupas/01_v.jpg')}}" alt="catalogo 1">
+	<img id="02_v" src="{{url_for('static', filename = 'imagens/estoque_roupas/02_v.jpg')}}">
+	<img id="03_v" src="{{url_for('static', filename = 'imagens/estoque_roupas/03_v.jpg')}}" alt="catalogo 3">
+</div>
+<div class="info_roupas">
+	<p>Vestido da Cor Vermelho com Bordado Gola V</p>
+	<h4><b>R$ 100,00</b></h4>
+	<p class="modos_pagamento">4x de R$25,00 s/juros no cartão RC</p>
+</div>
+<div class="info_roupas" style="margin-left: 336px; margin-top: -122px;">
+	<p>Vestido estampado com Babados</p>
+	<h4><b>R$ 100,00</b></h4>
+	<p class="modos_pagamento">4x de R$25,00 s/juros no cartão RC</p>
+</div>
+<div class="info_roupas" style="margin-left: 672px; margin-top: -122px;">
+	<p>Vestido Liso com detalhes em Retilínea</p>
+	<h4><b>R$ 100,00</b></h4>
+	<p class="modos_pagamento">4x de R$25,00 s/juros no cartão RC</p>
+</div>
+<div class="catalogo">
+	<img id="01_p" src="{{url_for('static', filename = 'imagens/estoque_roupas/01_p.jpg')}}" alt="catalogo 1">
+	<img id="02_p" src="{{url_for('static', filename = 'imagens/estoque_roupas/02_p.jpg')}}" alt="catalogo 2">
+	<img id="03_p" src="{{url_for('static', filename = 'imagens/estoque_roupas/03_v.jpg')}}" alt="catalogo 3">
+</div>
+<div class="info_roupas">
+	<p>Vestido da Cor Preto</p>
+	<h4><b>R$ 100,00</b></h4>
+	<p class="modos_pagamento">4x de R$25,00 s/juros no cartão RC</p>
+</div>
+<div class="info_roupas" style="margin-left: 336px; margin-top: -122px;">
+	<p>Vestido Estampado com Folhagens</p>
+	<h4><b>R$ 100,00</b></h4>
+	<p class="modos_pagamento">4x de R$25,00 s/juros no cartão RC</p>
+</div>
+<div class="info_roupas" style="margin-left: 672px; margin-top: -122px;">
+	<p>Vestido Poá em Crepe texturizado Preto</p>
+	<h4><b>R$ 100,00</b></h4>
+	<p class="modos_pagamento">4x de R$25,00 s/juros no cartão RC</p>
+</div>
+<div id="setas">
+        <span><a href=/loja> &#8678;</a></span> <span><a href=/loja2>&#8680;</a></span>
+</div>
+<footer>
+	<address>© 2019 por ROUPAS E CIA.<br>
+	ROUPAS E CIA, R. Bernardino José de Oliveira, 81 - Badenfurt, Blumenau - SC, CEP: 89070-270</address>
+	<div class="redes_sociais">
+		<i style="font-size:24px;" class="fa">&#xf232;</i>   <i style="font-size:24px;" class="fa">&#xf099;</i>   <i style="font-size:24px" class="fa">&#xf230;</i>
+	</div>	
+</footer>
+
+<script type="text/javascript">
+	function MyFunction(){
+		var x = document.getElementById("myDIV");
+		if (x.style.display === "none") {
+			x.style.display = "block";} 
+		else {
+			x.style.display = "none";}
+}
+	function MyFunction2(){
+		var y = document.getElementById("myDIV2");
+		if (y.style.display === "none") {
+			y.style.display = "block";} 
+		else {
+			y.style.display = "none";}
+}
+	function MyFunction3(){
+		var z = document.getElementById("myDIV3");
+		if (z.style.display === "none") {
+			z.style.display = "block";} 
+		else {
+			z.style.display = "none";}
+}
+
+</script>
+
+</body>
+</html>
